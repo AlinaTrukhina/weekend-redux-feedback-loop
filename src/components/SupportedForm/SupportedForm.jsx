@@ -48,7 +48,12 @@ function SupportedForm() {
             type="number" min="0" max="5"
             onChange={(evt)=>handleInput(evt)}
             value={supportedRating}
-            />     
+            /> 
+            
+            <input onChange={(evt)=>handleInput(evt)} id="supportedInput" 
+                type="number" min="0" max="5" value={supportedRating}
+                required
+            />    
             <Button type="submit" variant="contained">
                 Next
             </Button>
